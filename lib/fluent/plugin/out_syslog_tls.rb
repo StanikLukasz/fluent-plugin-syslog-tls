@@ -105,7 +105,7 @@ module Fluent::Plugin
         client_cert: client_cert,
         client_key: client_key,
         verify_cert_name: verify_cert_name,
-        max_retries: 3,
+        max_retries: 30,
       )
       logger = ::SyslogTls::Logger.new(transport, token)
       logger.facility(facility)

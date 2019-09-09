@@ -19,9 +19,9 @@ require 'openssl'
 module SyslogTls
   # Supports SSL connection to remote host
   class SSLTransport
-    CONNECT_TIMEOUT = 10
+    CONNECT_TIMEOUT = 10000
     # READ_TIMEOUT    = 5
-    WRITE_TIMEOUT   = 5
+    WRITE_TIMEOUT   = 10000
 
     attr_accessor :socket
 
