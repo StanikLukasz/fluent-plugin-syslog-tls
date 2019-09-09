@@ -18,10 +18,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'syslog_tls/version'
 
 Gem::Specification.new do |s|
-  s.name          = 'fluent-plugin-syslog-tls'
+  s.name          = 'fluent-plugin-syslog-tls-long-timeout'
   s.version       = SyslogTls::VERSION
-  s.authors       = ['thomas morgan']
-  s.email         = ['tm@iprog.com']
+  s.authors       = ['thomas morgan', 'lukasz stanik']
+  s.email         = ['tm@iprog.com', 'stanik.lukasz@outlook.com']
   s.summary       = %q{Fluent Syslog TLS output plugin}
   s.description   = %q{Syslog TLS output plugin with formatting support, for Fluentd}
   s.homepage      = 'https://github.com/zarqman/fluent-plugin-syslog-tls'
