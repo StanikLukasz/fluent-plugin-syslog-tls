@@ -90,7 +90,7 @@ module Fluent
     end
 
     def new_logger(tag)
-      transport = ::SyslogTls::SSLTransport.new(host, port, ca_cert: ca_cert, cert: cert, key: key, max_retries: 3)
+      transport = ::SyslogTls::SSLTransport.new(host, port, ca_cert: ca_cert, cert: cert, key: key, max_retries: 50)
       logger = ::SyslogTls::Logger.new(transport, token)
       logger.facility(facility)
       logger.hostname(hostname)
