@@ -18,7 +18,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'syslog_tls/version'
 
 Gem::Specification.new do |s|
-  s.name          = 'fluent-plugin-syslog-tls'
+  s.name          = 'fluent-plugin-syslog-tls-long-timeout'
   s.version       = SyslogTls::VERSION
   s.authors       = ['thomas morgan']
   s.email         = ['tm@iprog.com']
